@@ -19,13 +19,14 @@ def home():
   return mensaje
   
 @app.route('/sumar/<int:s1>/<int:s2>')
-def sum(s1,s2):
+def sumar(s1,s2):
   resultado=s1+s2
-  return (sum("La suma de los numeros{s1} y {s2} es {resultado}"))
+  return f"La suma de los numeros {s1} y {s2} es {resultado}"
   
 @app.route('/Restar/<r1>/<r2>')
-def Res(v1):
-    return(Res("La resta de los numeros"))
+def Res(r1,r2):
+    resultadoRes=r1-r2
+    return f"La resta de los numeros {r1} y {r2} es {resultadoRes}"
 
 @app.route('/Mult/<m1>/<m2>')
 def Multi(v1):
