@@ -18,12 +18,10 @@ def home():
 '''
   return mensaje
   
-@app.route('/sumar/<s1>/<s2>')
+@app.route('/sumar/<int:s1>/<int:s2>')
 def sum(s1,s2):
-  val1=0
-  val2=0
-  sum=val1+val2
-  return (sum("La suma de los numeros{s1} y {s2} es {sum}"))
+  resultado=s1+s2
+  return (sum("La suma de los numeros{s1} y {s2} es {resultado}"))
   
 @app.route('/Restar/<r1>/<r2>')
 def Res(v1):
@@ -35,10 +33,7 @@ def Multi(v1):
 
 @app.route('/Div/<d1>/<d2>')
 def div(v1):
-  fact=1
-  for x in range(1,int(v1)+1):
-    fact*=x
-    return (fact("el factorial de {v1}! es {fact}"))
+    return (div("el factorial de {v1}! es {fact}"))
   
 @app.route('/NumMin/<e1>/<e2>')
 def Men(v1):
