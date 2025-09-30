@@ -15,8 +15,9 @@ def home():
   <li>para saber el numero Menor escribe en el navegador 127.0.0.0.5000/NumMin/valor 1/valor 2</li>
   
   <footer><br>
-  <h1>Edgar Uriel Morales Torres 
-  5-D</h1></footer>
+  <h1><br>Edgar Uriel Morales Torres</h1>
+  <h1><br>5-D</h1>
+  </footer>
 </ol>
 '''
   return mensaje
