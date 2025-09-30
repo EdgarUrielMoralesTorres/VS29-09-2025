@@ -13,7 +13,10 @@ def home():
   <li>para Dividir escribe en el navegador 127.0.0.0.5000/Div/valor 1/valor 2</li>
   <li>para saber el numero Mayor escribe en el navegador 127.0.0.0.5000/NumMax/valor 1/valor 2</li>
   <li>para saber el numero Menor escribe en el navegador 127.0.0.0.5000/NumMin/valor 1/valor 2</li>
-  <footer>Edgar Uriel Morales Torres</footer>
+  
+  <footer><br>
+  <h1>Edgar Uriel Morales Torres 
+  5-D</h1></footer>
 </ol>
 '''
   return mensaje
@@ -21,22 +24,22 @@ def home():
 @app.route('/sumar/<int:s1>/<int:s2>')
 def sumar(s1,s2):
   resultado=s1+s2
-  return f"La suma de los numeros {s1} y {s2} es {resultado}"
+  return (f"La suma de los numeros {s1} y {s2} es {resultado}")
   
 @app.route('/Restar/<int:r1>/<int:r2>')
 def Res(r1,r2):
     resultadoRes=r1-r2
-    return f"La resta de los numeros {r1} y {r2} es {resultadoRes}"
+    return (f"La resta de los numeros {r1} y {r2} es {resultadoRes}")
 
 @app.route('/Mult/<int:m1>/<int:m2>')
 def Mult(m1,m2):
     resultadosMul=m1*m2
-    return f"Las multiplicaciones de los numeros {m1} y {m2} es {resultadosMul}"
+    return (f"Las multiplicaciones de los numeros {m1} y {m2} es {resultadosMul}")
 
 @app.route('/Div/<int:d1>/<int:d2>')
 def Div(d1,d2):
     resultadosDiv=d1/d2
-    return f"la divicion de los numeros {d1} y {d2} es {resultadosDiv}"
+    return (f"la divicion de los numeros {d1} y {d2} es {resultadosDiv}")
   
 @app.route('/NumMin/<int:e1>/<int:e2>')
 def NumMin(e1,e2):
